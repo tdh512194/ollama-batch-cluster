@@ -101,7 +101,13 @@ Example running submitting a batch or prompts for processing:
 
 ![ollama batch process example](images/ollama-batch-process-example.png)
 
-In the example below, over two minutes (121 seconds) of work for a single GPU was completed in just 9 seconds, which is 13.5x faster than if it was run serially on a single GPU. 
+In the example below, over two minutes (121 seconds) of work for a single GPU was completed in just 9 seconds, which is 13.5x faster than if it was run serially on a single GPU.
+
+# [IMPORTANT] Terminating the server
+We finally terminate the ollama server we started by this command to free memory. Note that manually quiting UI Ollama will not affect this server.
+```bash
+pkill ollama
+```
 
 # Collecting the responses 
 
